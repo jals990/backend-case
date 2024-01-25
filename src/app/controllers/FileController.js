@@ -1,6 +1,6 @@
 import * as UseCase from '../useCases/index';
 
-class DevelopmentController {
+class FileController {
   
   async delete(req, res) {
     try {
@@ -40,4 +40,4 @@ class DevelopmentController {
  
 }
 
-export default new DevelopmentController();
+export default new FileController();
