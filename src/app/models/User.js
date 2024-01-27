@@ -11,6 +11,8 @@ const userSchema = new mongoose.Schema(
       password: { type: String, default: '' },
       hashReset: { type: String, default: '' }, //Caso fosse solicitado alteração de senha
     },
+    isDeleted: { type: Boolean, default: false },
+    deletedAt: { type: Date, default: null },
   },
   {
     timestamps: true,
